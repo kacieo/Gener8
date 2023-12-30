@@ -1,20 +1,21 @@
 // Assignment code here
 var generateBtn = document.querySelector("#generate");
 
-generateBtn.addEventListener("click", function(){;
+generateBtn.addEventListener("click", function(){
   var passwordLength = prompt("How many characters does your password require?");
   passwordLength = parseInt(passwordLength);
   var uppercase = prompt("Do you want to include uppercase letters? Please indicate 'y' or 'yes'.");
   var number = prompt("Do you want to include numbers in your password? Please indicate 'y' or 'yes'.");
-  var special = prompt("Does your password require special characters?Please indicate 'y' or 'yes'.");
+  var special = prompt("Does your password require special characters? Please indicate 'y' or 'yes'.");
 
   if (isNaN(passwordLength) || passwordLength <= 0){
     prompt("Please enter a valid answer.");
       return;
-}
+  }
+//need more error handling
 
 //chatacter sets
-  var lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
+var lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numberChar = "0123456789";
 var specialChar = "!@#$%^&*()-_+=<>?";

@@ -32,7 +32,6 @@ if (special === 'yes' || special === 'y'){
 }
 
 writePassword();
-});
 
 //formula
 function generatePassword(){
@@ -48,3 +47,4 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
+});
